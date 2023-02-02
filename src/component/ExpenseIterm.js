@@ -1,5 +1,16 @@
 import React from "react";
-function ExpencesIterm() {
-  return <h1>Thabo Radebe</h1>;
+import "./ExpenseIterm.css";
+import ExpenseDate from "./ExpenseDate";
+function ExpenseIterm(props) {
+  return (
+    <div className="expense-item">
+      <ExpenseDate date={props.date}/>
+      <div className="expense-item__description">
+        <h2>{props.title}</h2>
+        <div className="expense-item__price">R{props.amount}</div>;
+      </div>
+    </div>
+  );
 }
-export default ExpencesIterm;
+export default ExpenseIterm;
+//{props.date.toISOString()}
