@@ -1,13 +1,14 @@
 import ExpenseIterm from "./ExpenseIterm";
 import './Expenses.css'
+import Card from './Card';
 const Expenses = props => {
     return (
-      <div className="expenses">
+      <Card className="expenses">
   
         {props.items.map(({ id, title, amount, date }) => (
           <ExpenseIterm title={title} amount={amount} date={date} />
         ))}
-      </div>
+      </Card>
     );
 };
 export default Expenses;
