@@ -1,6 +1,6 @@
 import React from "react";
-import ExpensesData from "./component/ExpensesData";
-import Expenses from "./component/Expenses";
+import ExpensesData from "./component/Expenses/ExpensesData";
+import Expenses from "./component/Expenses/Expenses";
 
 function App() {
   return (
