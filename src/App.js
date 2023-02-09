@@ -4,15 +4,15 @@ import Expenses from "./component/Expenses/Expenses";
 import NewExpense from "./component/NewExpense/NewExpense";
 
 function App() {
+  const saveNewExpensehandler = (NewExpenseDate) => {
+    console.log(NewExpenseDate);
+  };
   return (
     <div>
-      <NewExpense />
+      <NewExpense onSaveNewExpense={saveNewExpensehandler} />
       <Expenses items={ExpensesData} />
     </div>
   );
 }
 
 export default App;
-
-
-
