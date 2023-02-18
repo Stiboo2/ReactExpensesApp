@@ -15,7 +15,7 @@ const NewExpense = (props) => {
     setIsButtonClicked(true);
   };
   const cancelButtonHandler = () => {
-    console.log("cancelButtonHandler");
+
     setIsButtonClicked(false);
   };
 
